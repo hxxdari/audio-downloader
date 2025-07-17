@@ -1,0 +1,48 @@
+
+body {
+    background-color: #111;
+    color: #f00;
+    font-family: 'Tahoma', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+.container {
+    background-color: #222;
+    border: 2px solid #900;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+input, select {
+    width: 300px;
+}
+button {
+    background-color: #900;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #c00;
+}
+textarea {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #111;
+    color: white;
+    border: 1px solid #444;
+}
+.gpt-box {
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    border: 1px dashed #900;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}

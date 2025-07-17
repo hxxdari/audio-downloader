@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>دانلودر MP3/WAV + چت</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎧 دانلود از YouTube / SoundCloud</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="لینک را وارد کنید..." required>
+            <select name="format">
+                <option value="mp3">MP3</option>
+                <option value="wav">WAV</option>
+            </select>
+            <button type="submit">دانلود</button>
+        </form>
+
+        <hr>
+
+        <h2>🤖 سوالی داری؟ از GPT بپرس!</h2>
+        <form method="POST">
+            <textarea name="message" rows="4" cols="40" placeholder="مثلاً: چرا دانلود نمی‌شه؟ یا چه فرمتی بهتره؟"></textarea><br>
+            <button type="submit">ارسال سوال</button>
+        </form>
+
+        {% if gpt_response %}
+        <div class="gpt-box">
+            <strong>GPT پاسخ داد:</strong>
+            <p>{{ gpt_response }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
